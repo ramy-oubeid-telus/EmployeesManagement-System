@@ -20,6 +20,7 @@ bin/
 ### IntelliJ IDEA ###
 .idea
 *.iws
+*.log
 *.iml
 *.ipr
 out/
@@ -35,3 +36,5 @@ out/
 
 ### VS Code ###
 .vscode/
+### Ignore the logs ###
+*.log
