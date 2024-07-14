@@ -1,41 +1,51 @@
-2024-07-10 16:43:23 INFO  com.crud.CrudApplication - Starting CrudApplication using Java 17.0.11 with PID 21316 (C:\Users\ROUBEID\Documents\CRUD\CRUD\build\classes\java\main started by ROUBEID in C:\Users\ROUBEID\Documents\CRUD\CRUD)
-2024-07-10 16:43:23 INFO  com.crud.CrudApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-10 16:43:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-07-10 16:43:23 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-07-10 16:43:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-07-10 16:43:24 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
-2024-07-10 16:43:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 4000 (http)
-2024-07-10 16:43:25 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-4000"]
-2024-07-10 16:43:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-10 16:43:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-07-10 16:43:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-10 16:43:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1768 ms
-2024-07-10 16:43:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-10 16:43:26 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a5c5c39
-2024-07-10 16:43:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-10 16:43:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-07-10 16:43:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-07-10 16:43:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-07-10 16:43:28 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
-2024-07-10 16:43:28 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-07-10 16:43:28 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-07-10 16:43:28 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-07-10 16:43:28 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 0 ResponseBodyAdvice
-2024-07-10 16:43:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2024-07-10 16:43:28 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-4000"]
-2024-07-10 16:43:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 4000 (http) with context path '/'
-2024-07-10 16:43:28 INFO  com.crud.CrudApplication - Started CrudApplication in 5.896 seconds (process running for 7.441)
-2024-07-10 16:46:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-10 16:46:21 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3fa73ecd
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@326a1273
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-07-10 16:46:21 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/employees", parameters={}
-2024-07-10 16:46:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.crud.rest.EmployeeRestController#findAll()
-2024-07-10 16:46:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2024-07-10 16:46:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Employee [id=1, fistName=Leslie, lastName=Andrews, email=leslie@luv2code.com], Employee [id=2, fist (truncated)...]
-2024-07-10 16:46:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-07-13 20:15:42 INFO  com.crud.CrudApplication - Starting CrudApplication using Java 17.0.11 with PID 22576 (C:\Users\ROUBEID\Documents\CRUD\CRUD\build\classes\java\main started by ROUBEID in C:\Users\ROUBEID\Documents\CRUD\CRUD)
+2024-07-13 20:15:42 INFO  com.crud.CrudApplication - No active profile set, falling back to 1 default profile: "default"
+2024-07-13 20:15:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-13 20:15:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-13 20:15:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-13 20:15:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2024-07-13 20:15:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 4000 (http)
+2024-07-13 20:15:43 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-4000"]
+2024-07-13 20:15:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-13 20:15:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-13 20:15:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-13 20:15:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1603 ms
+2024-07-13 20:15:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-07-13 20:15:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7acc584a
+2024-07-13 20:15:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-07-13 20:15:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-13 20:15:45 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-13 20:15:46 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-13 20:15:46 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+2024-07-13 20:15:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-07-13 20:15:46 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-13 20:15:46 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-13 20:15:46 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 0 ResponseBodyAdvice
+2024-07-13 20:15:46 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-07-13 20:15:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-4000"]
+2024-07-13 20:15:46 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 4000 (http) with context path '/'
+2024-07-13 20:15:46 INFO  com.crud.CrudApplication - Started CrudApplication in 5.35 seconds (process running for 6.823)
+2024-07-13 20:17:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-13 20:17:53 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@338b3733
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7fc042d1
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-07-13 20:17:53 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/employees", parameters={}
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.crud.rest.EmployeeRestController#findAll()
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[Employee [id=1, fistName=Leslie, lastName=Andrews, email=leslie@luv2code.com], Employee [id=2, fist (truncated)...]
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2024-07-13 20:17:53 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-07-13 20:17:53 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-07-13 20:17:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Jul 13 20:17:53 EDT 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-07-13 20:17:53 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
